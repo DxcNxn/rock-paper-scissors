@@ -1,4 +1,5 @@
 let computerChoice = "";
+let humanChoice = "";
 
 function getComputerChoice() {
     let computer = Math.floor(Math.random() * 3) + 1;
@@ -13,3 +14,10 @@ function getComputerChoice() {
 
     return computerChoice;
 }
+
+function getHumanChoice() {
+    humanChoice = prompt("Pick rock, paper, or scissors:", "rock");
+    humanChoice = humanChoice.toLowerCase();
+    return humanChoice;
+}
+
